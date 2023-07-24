@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="Keywords"
+          content="台风,台风路径实时发布系统,台风路径,实时路径,台风实时路径,最新台风"/>
+    <title>🌀 台风路径 | 🫣 瞧瞧台风到哪儿啦</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+    <script src="js/jquery.js"></script>
+    <link href="css/toastr.css" rel="stylesheet"/>
+    <script src="js/toastr.js"></script>
+    <link href="css/icon.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script src="js/script.js"></script>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=JLzf6aSAeKEo1Vkd&ck=JLzf6aSAeKEo1Vkd"></script>
+</head>
+<body>
+<div class="typhoonNameLabel" tabindex="1"></div>
+<div id="map"></div>
+<img src="images/notf.png" alt="" style="position: fixed; left: 50%; margin-left: -125px; top: 30%; display: none;"
+     id="notf"/>
+<!-- <div id="cloud-icon"> -->
+<!--     <i class="icon-cloud"></i> -->
+<!-- </div> -->
+<img src="images/wap_rain_1.png" alt="" id="wap_rain" class="wap_icon"/>
+<img src="images/wap_cloud_1.png" alt="" id="wap_cloud" class="wap_icon"/>
+<img src="images/wap_legend_1.png" alt="" id="wap_legend" class="wap_icon"/>
+<img src="images/wap_tf_1.png" alt="hide" id="tflist-icon" class="wap_icon"/>
+<!--<div id="tflist-icon" alt="hide">
+    <i class="icon-list"></i>
+</div>-->
+<div id="tfbox" style="display: none;">
+    <div class="tf-head">
+        <ul id="titleTab"></ul>
+        <div class="tflist-close">
+            <i class="icon-cross"></i>
+        </div>
+    </div>
+    <div class="tf-list" id="tflist">
+    </div>
+</div>
+<div class="top-bottom" style="width: 100%">
+    <div style='position: absolute; overflow: hidden; height:40px; display: inline;line-height: 40px;'
+         id="tfinfomarqueen"></div>
+</div>
+<div>
+    <div class="tuli" tabindex="1">
+        <div class="tuli-head">预报台</div>
+        <ul>
+            <li><img src="images/legend/forecast-01.png" alt="">中国大陆</li>
+            <li><img src="images/legend/forecast-02.png" alt="">中国香港</li>
+            <li><img src="images/legend/forecast-04.png" alt="">中国台湾</li>
+            <li><img src="images/legend/forecast-03.png" alt="">日本</li>
+            <li><img src="images/legend/forecast-05.png" alt="">美国</li>
+        </ul>
+        <div class="tuli-head">台风等级</div>
+        <ul class="tuli-level">
+            <li><img src="images/legend/t-01.png" alt="">热带低压</li>
+            <li><img src="images/legend/t-02.png" alt="">热带风暴</li>
+            <li><img src="images/legend/t-03.png" alt="">强热带风暴</li>
+            <li><img src="images/legend/t-04.png" alt="">台风</li>
+            <li><img src="images/legend/t-05.png" alt="">强台风</li>
+            <li><img src="images/legend/t-06.png" alt="">超强台风</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
