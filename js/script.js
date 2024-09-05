@@ -7014,7 +7014,7 @@ var MapLayer, MapLabelLayer, map, CloudLayer, RainImgLayer, LabelingLayer, Taipe
     var m = "";
     $.ajax({
         type: "GET",
-        url: "https://cors.eu.org/http://typhoon.zjwater.gov.cn/Api/TyhoonActivity",
+        url: "https://cors.ssss.fun/http://typhoon.zjwater.gov.cn/Api/TyhoonActivity",
         success: function(t) {
             if ("" != t && null != t && "undefined" != t && "null" != t && null != t)
                 if (t && t.length) {
@@ -7087,7 +7087,7 @@ function DrawTyphoonPath(b, i, n, o) {
     hashtable.put(b + "circle12Layer", P),
     $.ajax({
         type: "GET",
-        url: "https://cors.eu.org/http://typhoon.zjwater.gov.cn/Api/TyphoonInfo/" + b,
+        url: "https://cors.ssss.fun/http://typhoon.zjwater.gov.cn/Api/TyphoonInfo/" + b,
         success: function(d) {
             var t, p, e, _, m, f, g, y, v;
             d && (t = d.isactive,
@@ -7355,7 +7355,7 @@ function DisplayCloud() {
     try {
         $.ajax({
             type: "GET",
-            url: "https://cors.eu.org/http://typhoon.zjwater.gov.cn/Api/LeastCloud",
+            url: "https://cors.ssss.fun/http://typhoon.zjwater.gov.cn/Api/LeastCloud",
             success: function(t) {
                 var e, i, n, o, s, a;
                 t ? (e = t.cloudFullPath,
@@ -7484,7 +7484,7 @@ function DisplayRainPublic(t) {
     try {
         $.ajax({
             type: "GET",
-            url: "https://cors.eu.org/http://typhoon.zjwater.gov.cn/Api/LeastRain/" + t,
+            url: "https://cors.ssss.fun/http://typhoon.zjwater.gov.cn/Api/LeastRain/" + t,
             success: function(t) {
                 RainImgLayer.clearLayers();
                 for (var e = JSON.parse(t.contours), i = 0; i < e.length; i++) {
